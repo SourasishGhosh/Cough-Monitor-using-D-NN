@@ -14,6 +14,12 @@ It classifies cough sounds using a **Deep Neural Network (DNN)** model and is de
 
 ---
 
+
+https://github.com/user-attachments/assets/58794a2e-5155-4a78-a1bb-fae094c4b045
+
+
+---
+
 ## 🗂️ Project Structure
 
 Coughometer/
