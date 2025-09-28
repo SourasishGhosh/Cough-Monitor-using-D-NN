@@ -20,6 +20,8 @@ https://github.com/user-attachments/assets/58794a2e-5155-4a78-a1bb-fae094c4b045
 
 ---
 
+
+
 ## 🗂️ Project Structure
 
 Coughometer/
@@ -69,8 +71,3 @@ Link: [https://cough-o-meter.onrender.com/]
 🔗 [LinkedIn](https://www.linkedin.com/in/sourasish-ghosh-b8ba36281) | [GitHub](https://github.com/SourasishGhosh)
 
 
-
----
-
-Would you like me to also **add example usage screenshots/gifs (UI + API response)** section so recruiters can visually see how your app works?
-```
