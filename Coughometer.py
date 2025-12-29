@@ -9,12 +9,11 @@ from inference import predict_from_audio
 
 app = FastAPI()
 
-# (Optional) serve static files if you later add CSS/JS
 if not os.path.exists("static"):
     os.makedirs("static")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# --------- HTML FRONTEND ----------
+
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
     return """
@@ -105,7 +104,9 @@ async def home(request: Request):
     </html>
     """
 
-# --------- API ENDPOINT ----------
+
+
+
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     # accept wav, webm, ogg
@@ -116,11 +117,10 @@ async def predict(file: UploadFile = File(...)):
     wav_path = temp_path.rsplit(".", 1)[0] + ".wav"
 
     try:
-        # save raw upload
         with open(temp_path, "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
 
-        # if not wav → convert
+        # .wav converter
         if not temp_path.endswith(".wav"):
             audio = AudioSegment.from_file(temp_path)
             audio.export(wav_path, format="wav")
