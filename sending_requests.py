@@ -7,14 +7,8 @@ def send_cough_data():
     try:
         with open(file_path, "rb") as audio_file:
             files = {"file": audio_file}
-            
-            # Use the requests library to send the POST request
             response = requests.post(url, files=files)
-            
-            # This will raise an HTTPError for bad responses (4xx or 5xx)
             response.raise_for_status() 
-            
-            # Process and return the JSON response
             response_json = response.json()
             print(response_json)
             
@@ -29,7 +23,6 @@ def send_cough_data():
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return None
-
-# To run the function:
+        
 if __name__ == "__main__":
     send_cough_data()
