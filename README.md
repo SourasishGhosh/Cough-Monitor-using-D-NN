@@ -5,12 +5,12 @@ It classifies cough sounds using a **Deep Neural Network (DNN)** model and is de
 
 ---
 
-## 🚀 Features
-- 🎤 Upload or record **.wav cough audio files**  
-- 🧠 **Deep Neural Network (DNN)** for classification  
-- 🌐 Backend powered by **FastAPI**  
-- 🐳 Containerized with **Docker** and deployed on **Render**  
-- 📊 End-to-end ML system: preprocessing → model inference → API → frontend  
+## Features
+-  Upload or record **.wav cough audio files**  
+-  **Deep Neural Network (DNN)** for classification  
+-  Backend powered by **FastAPI**  
+-  Containerized with **Docker** and deployed on **Render**  
+-  End-to-end ML system: preprocessing → model inference → API → frontend  
 
 ---
 
@@ -22,8 +22,8 @@ https://github.com/user-attachments/assets/58794a2e-5155-4a78-a1bb-fae094c4b045
 
 
 
-## 🗂️ Project Structure
-
+## Project Structure
+```
 Coughometer/
 │── Coughometer.py       # FastAPI app (main backend)
 │── model/               # Pre-trained DNN model & weights
@@ -31,10 +31,10 @@ Coughometer/
 │── requirements.txt     # Dependencies
 │── Dockerfile           # For containerization
 │── README.md            # Project documentation
-
+```
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 - **Languages:** Python  
 - **Frameworks:** FastAPI, TensorFlow/Keras, Scikit-learn  
 - **Tools:** Docker, Git, Render  
@@ -42,19 +42,19 @@ Coughometer/
 
 ---
 
-## 📊 Dataset
+## Dataset
 The model was trained using publicly available **Cough Sound Dataset** from:  
 🔗 [Virufy Cough Dataset](https://virufy.org/en/datasets) and similar open-access respiratory audio datasets.  
 
 ---
 
-## 🌐 Deployment
+## Deployment
 
 The app is deployed on **Render** for live access.
 Link: [https://cough-o-meter.onrender.com/]
 
 
-## 🎯 Learning Outcomes
+##  Learning Outcomes
 
 * Building and training a **Deep Neural Network classifier**
 * Implementing an **end-to-end ML pipeline** with FastAPI
@@ -64,10 +64,10 @@ Link: [https://cough-o-meter.onrender.com/]
 
 ---
 
-## 📬 Contact
+## 📬Contact
 
 👤 **Sourasish Ghosh**
-📧 [sourasishghosh02@gmail.com](mailto:sourasishghosh02@gmail.com)
-🔗 [LinkedIn](https://www.linkedin.com/in/sourasish-ghosh-b8ba36281) | [GitHub](https://github.com/SourasishGhosh)
+ [sourasishghosh02@gmail.com](mailto:sourasishghosh02@gmail.com)
+ [LinkedIn](https://www.linkedin.com/in/sourasish-ghosh-b8ba36281) | [GitHub](https://github.com/SourasishGhosh)
 
 
