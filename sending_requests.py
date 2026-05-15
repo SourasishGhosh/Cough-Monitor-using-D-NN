@@ -2,7 +2,7 @@ import requests
 
 def send_cough_data():
     url = "http://127.0.0.1:8000/predict"
-    file_path = r"D:\PERSONAL PROJECTS\ML Project Ideas\Multimodal Cough-Based Respiratory Health Predictor\Kaggle_Coswara\coswara_wav\20200413\0Rlzhiz6bybk77wdLjxwy7yLDhg1\breathing-deep.wav"  # Update with your actual file path
+    file_path = ""  # Update with your actual file path
 
     try:
         with open(file_path, "rb") as audio_file:
